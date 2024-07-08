@@ -5,81 +5,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekaterina Poliakh - CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <h1>Ekaterina Poliakh</h1>
         <nav>
             <ul>
                 <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#english">English</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#code-example">Code Example</a></li>
             </ul>
         </nav>
+        <div class="intro">
+            <img src="images/myPhoto.jpg" alt="Photo of Ekaterina Poliakh" class="profile-photo">
+            <h1>Ekaterina Poliakh</h1>
+            <h2>Frontend Developer</h2>
+            <p>I'm a third-year Software Engineering student at the Higher School of Economics based in Moscow and an aspiring Front-End Developer. I'll help you build beautiful websites your users will love.</p>
+
+            <div class="contact-buttons-container">
+            <button  class="github-btn" onclick="window.open('https://github.com/KatePoliakh', '_blank')">
+                <i class="fab fa-github"></i>
+            </button>
+            <button class="email-btn" onclick="window.open('mailto:epolyakh.p@gmail.com', '_blank')">
+                <i class="fas fa-envelope"></i>
+            </button>
+            <button class="discord-btn" onclick="window.open('https://discordapp.com/users/katepoliakh', '_blank')">
+                <i class="fab fa-discord"></i>
+            </button>
+     
+            </div>
+        </div>
     </header>
     <main>
-        <section id="contacts">
-            <h2>Contacts</h2>
-            <ul>
-                <li>Email: <a href="mailto:epolyakh.p@gmail.com">epolyakh.p@gmail.com</a></li>
-                <li>Phone: +7-(928)-768-79-20</li>
-                <li>Discord: katepoliakh</li>
-                <li>GitHub: <a href="https://github.com/KatePoliakh">github.com/KatePoliakh</a></li>
-            </ul>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a third-year Software Engineering student at the Higher School of Economics and an aspiring Front-End Developer...</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: HTML, JavaScript, C++, C#</li>
-            </ul>
-        </section>
         <section id="projects">
             <h2>Projects</h2>
-            <article>
-                <h3><a href="https://github.com/KatePoliakh/data-analysis-project">Book Analysis on Wildberries Website Using Python</a></h3>
-                <p>Course: Data Analysis with Python</p>
-                <p>Date: February 2023</p>
-                <ul>
-                    <li>Studied the features influencing the pricing range of books...</li>
-                    <li>Technologies Used: Python, Selenium, WebDriver Manager, Pandas, Matplotlib, scipy</li>
-                </ul>
-            </article>
-            <article>
-                <h3><a href="https://github.com/KatePoliakh/CurrencyConverter_mobileApp">Currency Converter Mobile App</a></h3>
-                <p>Date: February 2024</p>
-                <ul>
-                    <li>Technologies Used: React Native, Expo, JavaScript, API</li>
-                </ul>
-            </article>
-            <article>
-                <h3><a href="https://github.com/KatePoliakh/peacefulPal_mobileApp">PeacefulPal - Mobile Application for Providing Psychological Assistance</a></h3>
-                <p>Course: Coursework Project</p>
-                <p>Date: March - April 2024</p>
-                <ul>
-                    <li>Implemented personal account registration, emotional state recording...</li>
-                    <li>Technologies Used: React Native, Expo, JavaScript, NodeJs, Docker, PostgreSQL</li>
-                </ul>
-            </article>
+            <div class="projects">
+                <article>
+                    <h3><a target="_blank" href="https://github.com/KatePoliakh/peacefulPal_mobileApp">PeacefulPal - Mobile Application for Providing Psychological Assistance</a></h3>
+                    <ul>
+                        <li>Implemented personal account registration, emotional state recording, diary keeping, breathing exercises, and mini-games.</li>
+                        
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Expo</li>
+                        <li>JavaScript</li>
+                        <li>API</li>
+                        <li>NodeJs</li>
+                        <li>Docker</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3><a target="_blank" href="https://github.com/KatePoliakh/CurrencyConverter_mobileApp">Currency Converter Mobile App</a></h3>
+                    <ul>
+                        <li>Mobile App that allows to choose currencies and convert them</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Expo</li>
+                        <li>JavaScript</li>
+                        <li>API</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3><a target="_blank" href="https://github.com/KatePoliakh/data-analysis-project">Book Analysis on Wildberries Website Using Python</a></h3>
+                    <ul>
+                        <li>Studied the features influencing the pricing range of books in the Wildberries online store. Data was collected through web scraping. The collected data was then verified for accuracy and went through a cleaning process. Research hypotheses were formulated and tested using statistical and graphical data analysis.</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Selenium</li>
+                        <li>WebDriver Manager</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>scipy</li>
+                    </ul>
+                </article>
+            </div>
+            </div>
         </section>
         <section id="education">
             <h2>Education</h2>
-            <p>Bachelor of Computer Science</p>
-            <p>National Research University Higher School of Economics (HSE) Software engineer, 2022-2026</p>
+            <div class="education">
+                <div>
+                <p>Bachelor of Computer Science</p>
+                <p>National Research University Higher School of Economics (HSE) Software engineer, 2022-2026</p>
+                </div>
+                <div>
+                    <p>Bachelor of Computer Science</p>
+                    <p>Brno University Of Technology - Vysoké učení technické v Brně (VUT) Software engineer, 2021-2022</p>
+                </div>
+            </div>
         </section>
-        <section id="english">
-            <h2>English Proficiency</h2>
-            <p>Level: B2 (Upper-Intermediate)</p>
+        <section id="courses">
+            <h2>Courses</h2>
+            <div class="courses">
+                <div>
+                    <h3>RS Schools</h3>
+                    <p>JavaScript/Front-end. Stage 0</p>
+                    <p>(in progress)</p>
+                </div>
+                <div>
+                    <h3>FreeCodeCamp</h3>
+                    <p>Responsive Web Design</p>
+                </div>
+                <div>
+                    <h3>FreeCodeCamp</h3>
+                    <p>JavaScript Algorithms and Data Structures</p>
+                </div>
+            </div>
         </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                
+                <div>
+                    <h3>Web Design</h3>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>С#</li>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+            </div> 
+        </section>
+        <section id="languages">
+            <h2>Languages</h2>
+            <div class="languages">
+                <div>
+                    
+                    <h3>English </h3>
+                    <p>Level: B2 (Upper-Intermediate)</p>
+                </div>
+                <div>
+                    <h3>Czech </h3>
+                    <p>Level: B2 (Upper-Intermediate)</p>
+                </div>
+                <div>
+                    <h3>Russian </h3>
+                    <p>Level: native speaker</p>
+                </div>
+            </div>
+        </section>
+        <section id="code-example">
+            <div class="code-example"></div>
+            <h2>Example Code</h2>
+            <pre>
+                <code>
+                    // Endpoint for user registration
+                    app.post('/api/register', async (req, res) => {
+                        const { fullName, email, password } = req.body;
+                        const userId = uuidv4();
+                        try {
+                            const emailExists = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+                            if (emailExists.rows.length > 0) {
+                                return res.status(400).json({ error: 'Email already registered' });
+                            }
+                
+                            // Hash the password
+                            const hashedPassword = await bcrypt.hash(password, 10); // Salt rounds: 10
+                
+                            // If email is not registered, proceed with user registration
+                            await pool.query('INSERT INTO users (id, full_name, email, password) VALUES ($1, $2, $3, $4)', [userId, fullName, email, hashedPassword]);
+                            res.status(201).json({ message: 'User registered successfully' });
+                        } catch (error) {
+                            console.error('Error registering user:', error);
+                            res.status(500).json({ error: 'Internal server error' });
+                        }
+                    });
+                </code>
+            </pre>
+        </section>
+        
     </main>
     <footer>
-        <p><a href="https://github.com/KatePoliakh">GitHub</a> | 2024 | <a href="https://rs.school/js/">RS School</a></p>
+        <div class="footer-buttons-container">
+        <div>
+            <p>&copy; 2024 Ekaterina Poliakh</p>
+        </div>
+        <div>
+            <section id="contacts">
+                <h3>Contact me: </h3>
+                    <div class="footer-icons">
+                        <a href="https://github.com/KatePoliakh" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:epolyakh.p@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://discordapp.com/users/katepoliakh" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+               
+            </section>
+        </div>
+        <div>
+            <a href="https://rs.school/courses/javascript-ru" target="_blank" class="rs-school-link">
+                <img src="images/rs-school-logo.png" alt="RS School Logo">
+            </a>           
+        </div>
+        <a href="#" class="scroll-to-top">Back to Top</a>
+    </div>
+
+    
     </footer>
 </body>
 </html>
